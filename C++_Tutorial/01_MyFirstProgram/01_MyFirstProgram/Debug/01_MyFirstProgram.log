@@ -1,3 +1,4 @@
-﻿  get_user_input.cpp
-main.obj : error LNK2005: _main already defined in get_user_input.obj
-C:\Users\frase\OneDrive\Desktop\Github\C++\C++_Tutorial\01_MyFirstProgram\Debug\01_MyFirstProgram.exe : fatal error LNK1169: one or more multiply defined symbols found
+﻿  main.cpp
+  otherbruh.cpp
+  Generating Code...
+  01_MyFirstProgram.vcxproj -> D:\GitHub\Cpp\C++_Tutorial\01_MyFirstProgram\Debug\01_MyFirstProgram.exe
