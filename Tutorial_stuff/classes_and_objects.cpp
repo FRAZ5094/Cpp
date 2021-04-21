@@ -7,9 +7,11 @@ class YouTubeChannel
 {
 private:
     string Name;
-    string OwnerName;
     int SubscribersCount;
     list<string> PublishedVideoTitles;
+
+protected: //variables in here can be accessed through inheritance
+    string OwnerName;
 
 public:
     YouTubeChannel(string name, string ownerName)
@@ -50,11 +52,37 @@ public:
     }
 };
 
+class CookingYoutubeChannel : public YouTubeChannel
+{
+public:
+    CookingYoutubeChannel(string name, string OwnerName) : YouTubeChannel(name, OwnerName)
+    {
+    }
+    void Pracitce()
+    {
+        cout << "blah blah " << OwnerName << endl;
+    }
+};
+
+class SingersYoutubeChannel : public YouTubeChannel
+{
+public:
+    SingersYoutubeChannel(string name, string OwnerName) : YouTubeChannel(name, OwnerName)
+    {
+    }
+    void Pracitce()
+    {
+        cout << "blah blah " << OwnerName << endl;
+    }
+};
 int main()
 {
-    YouTubeChannel ytChannel("JamieBwodn", "jamie");
-    ytChannel.PublishVideo("Lol");
-    ytChannel.getInfo();
+    //YouTubeChannel ytChannel("hello", "bruh");
+    //ytChannel.PublishVideo("Lol");
+    //ytChannel.getInfo();
+
+    CookingYoutubeChannel ytChannel("Amy's kitchen", "Amy");
+    CookingYoutubeChannel ytChannel2("Amy's kitchen", "Amy");
 
     return 0;
 }
