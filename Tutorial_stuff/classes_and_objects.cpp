@@ -84,5 +84,10 @@ int main()
     CookingYoutubeChannel ytChannel("Amy's kitchen", "Amy");
     CookingYoutubeChannel ytChannel2("Amy's kitchen", "Amy");
 
+    cout << &ytChannel << endl;
+
+    int n = 5;
+    cout << &n << endl;
+
     return 0;
 }
